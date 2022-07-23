@@ -35,7 +35,11 @@ ul{
     list-style: none;
 }
 
-ul li{
+header nav ul li{
+    padding: 0 25px;
+}
+
+footer nav ul li{
     padding: 0 25px;
 }
 
@@ -150,18 +154,7 @@ ul li a:hover::after{
 }
 
 
-footer{
-    display: flex;
-    justify-content: flex-end;
-    background: black;
-    height: 150px;
-    border-top: 1px solid #ffffff;
-}
 
-footer nav ul li a{
-    color: #ffffff;
-    align-items: center;
-}
 
 
 footer li a::after{
@@ -328,7 +321,19 @@ footer li a::after{
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+footer{
+    background: black;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer nav ul li a{
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
    header{
     flex-direction: column;
    }
@@ -339,7 +344,7 @@ footer li a::after{
     border-top: 2px solid black;
    }
 
-   nav ul{
+   header nav ul{
     background: white;
     color: white;
     display: block;
@@ -358,15 +363,6 @@ footer li a::after{
         flex-direction: column;
    }
 
-   footer{
-    flex-direction: column;
-
-   }
-
-   footer ul li{
-    background: black;
-    width: 100%;
-   }
 
    .contact_form .container h1{
     font-size: 40px;
@@ -376,5 +372,13 @@ footer li a::after{
     flex-direction: column;
     align-items: center;
    }
-}
 
+   footer{
+       flex-direction: column;
+   }
+
+   footer nav ul{
+    color: white;
+    display: block;
+   }
+}
