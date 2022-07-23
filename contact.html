@@ -25,7 +25,99 @@
     </header>
 
     <main>
-
+        <section class="contact_form">
+            <div class="container">
+                <h1>CONTACT FORM</h1>
+            </div>
+            <div class="container">
+                <form method="post" onsubmit="return false">
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="contact_purpose">Purpose of Contact</label>
+                        </div>
+                        <div class="form-field">
+                            <select id="contact_purpose" name="contact_purpose">
+                                <option value="none" selected disabled hidden>Purpose of Contact</option>
+                                <option value="sell">I want to sell books</option>
+                                <option value="buy">I want to buy books</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="contact_name">Your Name: </label>
+                        </div>
+                        <div class="form-field">
+                            <input required id="contact_name" name="contact_name" type="text" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="contact_email">Your Email: </label>
+                        </div>
+                        <div class="form-field">
+                            <input required id="contact_email" name="contact_email" type="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="contact_phone">Your Phone: </label>
+                        </div>
+                        <div class="form-field">
+                            <input required id="contact_phone" name="contact_phone" type="tel" placeholder="Your Phone" pattern="[0-9]{9,13}">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label>How can we contact you: </label>
+                        </div>
+                        <div class="form-field">
+                            <ul>
+                                <li>
+                                    <input id="contact_byemail" name="contact_methods[]" value="yes" type="checkbox">
+                                    <label for="contact_yes">By Email</label>
+                                </li>
+                                <li>
+                                    <input id="contact_byphone" name="contact_methods[]" value="no" type="radio">
+                                    <label for="contact_no">By Phone</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label>Do you want to receive our weekly newsletter </label>
+                        </div>
+                        <div class="form-field">
+                           <ul>
+                                <li>
+                                    <input type="radio" name="contact_newsletter" id="contact_yes" value="yes" checked>
+                                    <label for="contact_yes">YES</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="contact_newsletter" id="contact_no" value="no">
+                                    <label for="contact_no">NO</label>
+                                </li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="contact_note">Note: </label>
+                        </div>
+                        <div class="form-field">
+                            <textarea cols="30" rows="10" required id="contact_note" name="contact_note"></textarea>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="btn">
+                            <input type="reset" value="Clear">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -41,3 +133,4 @@
     </footer>
 </body>
 </html>
+

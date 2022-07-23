@@ -23,6 +23,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid black;
 }
 
 nav{
@@ -150,27 +151,230 @@ ul li a:hover::after{
 
 
 footer{
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;  
     display: flex;
     justify-content: flex-end;
+    background: black;
+    height: 150px;
+    border-top: 1px solid #ffffff;
 }
 
-
-
-footer ul li a{
+footer nav ul li a{
     color: #ffffff;
+    align-items: center;
 }
+
 
 footer li a::after{
     content: "";
     display: block;
     background: #ffffff;
+    color: black;
     width: 0;
     height: 2px;
 }
 
-/* Category page */
+/* Contact Page */
+.contact_form .container{
+    justify-content: center;
+}
+
+.contact_form form{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.form_row{
+    display: flex;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 80%;
+    justify-content: space-between;
+}
+
+
+.form-field input{
+    padding: 5px 0;
+}
+
+.form-field input::placeholder{
+    padding-left: 5px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    background: #ffffff;
+    margin-right: 20px;
+
+}
+
+.btn input:hover{
+    color: white;
+    background: black;
+}
+
+/*Book*/
+
+.contact_form .container h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.contact_form .container label{
+    font-weight: 600;
+
+}
+
+.container_left, .container_middle, .container_right{
+    flex-basis: 30%;
+    padding: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_middle img{
+    width: 33%;
+    height: auto;
+    padding: 5px;
+}
+
+.container_middle{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container_left img{
+    width: 100%;
+    height: auto;
+}
+
+.container_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_right h2{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.container_right button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    background-color: orange;
+    color: #ffffff;
+    border: 1px solid orange;
+}
+
+.book_breadcrumb{
+    text-align: center;
+    margin: 40px 0;
+    align-items: center;
+   
+}
+
+.book_breadcrumb a{
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 10px;
+    color: black;
+}
+
+.book_desc{
+    background: black;
+}
+
+.book_desc .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.book_desc h2{
+    margin: 40px 100px;
+    color: #ffffff;
+}
+
+.book_more-desc p{
+    line-height: 40px;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.book_breadcrumb a:hover{
+    font-weight: 600;
+}
+
+.container_right button:hover{
+    background-color: #ffffff;
+    border: 1px solid orange;
+    color: orange;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+   header{
+    flex-direction: column;
+   }
+
+   nav{
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid black;
+   }
+
+   nav ul{
+    background: white;
+    color: white;
+    display: block;
+   }
+
+   .logo img{
+    width: 100px;
+    margin: 20px 40px;
+   }
+
+    header nav ul li:hover{
+    background: rgba(0,0,0,0.3);
+   }
+
+   .container{
+        flex-direction: column;
+   }
+
+   footer{
+    flex-direction: column;
+
+   }
+
+   footer ul li{
+    background: black;
+    width: 100%;
+   }
+
+   .contact_form .container h1{
+    font-size: 40px;
+   }
+
+   .form_row{
+    flex-direction: column;
+    align-items: center;
+   }
+}
+
