@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: auto
+
+}
+
+section{
+    padding: 100px 0;
+}
+
+/*Header*/
+header{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    margin: 20px 40px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    padding: 0 25px;
+}
+
+.logo img{
+    width: 150px;
+    margin: 20px 40px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block
+}
+
+header li a::after{
+    content: "";
+    display: block;
+    background: black;
+    width: 0;
+    height: 2px;
+
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+.cooking_book, .cooking_asia, .cooking_culinary{
+    background: black;
+}
+
+.cooking_book h2, .cooking_asia h2, .cooking_culinary h2{
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.cooking_book a, .cooking_asia a, .cooking_culinary a{
+    text-decoration: none;
+}
+
+.cooking_book-list, .medical_book-list, .cooking_asia-list, .cooking_baking-list, .cooking_culinary-list{
+    display: flex;
+    align-items: center;
+}
+
+.cooking_book-info, .cooking_asia-info, .cooking_culinary-info{
+    flex-basis: 20%;
+    padding: 1.6rem;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    margin: 40px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cooking_book-info a, .cooking_asia-info a, .cooking_culinary-info a{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.cooking_book-info a span, .medical_book-info a span, .cooking_asia-info a span, .cooking_baking-info a span, .cooking_culinary-info a span{
+    margin-top: 20px;
+}
+
+.cooking_book-info a img, .medical_book-info a img, .cooking_asia-info a img, .cooking_baking-info a img, .cooking_culinary-info a img{
+    width: 100%;
+    height: auto;
+}
+
+.medical_book, .cooking_baking{
+    background: #ffffff;
+}
+
+
+.medical_book h2, .cooking_baking h2{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
+.medical_book-info, .cooking_baking-info{
+    flex-basis: 20%;
+    padding: 1.6rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 40px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 80%;
+}
+
+.medical_book-info a, .cooking_baking-info a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.medical_book-info a span, .cooking_baking-info a span{
+    font-weight: 500;
+}
+
+.medical_book a, .cooking_baking a{
+    text-decoration: none;
+}
+
+
+footer{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;  
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+footer ul li a{
+    color: #ffffff;
+}
+
+footer li a::after{
+    content: "";
+    display: block;
+    background: #ffffff;
+    width: 0;
+    height: 2px;
+}
+
+/* Category page */
