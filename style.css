@@ -155,8 +155,6 @@ ul li a:hover::after{
 
 
 
-
-
 footer li a::after{
     content: "";
     display: block;
@@ -380,5 +378,10 @@ footer nav ul li a{
    footer nav ul{
     color: white;
     display: block;
+   }
+
+   .container_middle{
+    flex-direction: row;
+    max-width: 75%;
    }
 }
